@@ -22,7 +22,7 @@ public class RestResource {
     }
 
     @HystrixCommand(fallbackMethod = "fallBackHello",
-            commandKey = "helloYT", groupKey = "helloYT")
+            commandKey = "helloYoutube", groupKey = "helloYT")
     @GetMapping("/helloYT")
     public String helloYT() {
         //Wrong
